@@ -24,28 +24,28 @@ To conect to the service, there are 4 endpoints that correspond to each of the a
 
 * `/app/addClient/` which is a `POST` method. The endpoint receives the following parameters in the body of the request:
 
-    1. `client_id`: IntegerField (primary key, database index, unique)       ### The client ID
-    2. `username`: CharField                                                 ### The client name
-    3. `location`: CharField                                                 ### The client's location
+    1. `client_id`: IntegerField (primary key, database index, unique)### The client ID
+    2. `username`: CharField                                          ### The client name
+    3. `location`: CharField                                          ### The client's location
        
         and returns a response with the client created
     
 * `/app/addOperator/` which is a `POST` method. The endpoint receives the following parameters in the body of the request:
 
-    1. `operator_id`: IntegerField (primary key, database index, unique)       ### The operator ID
-    2. `operator_name`: CharField                                              ### The operator name
-    3. `operator_group`: CharField                                             ### The operator group
-    4. `store_id`: IntegerField                                                ### The operator's store ID
+    1. `operator_id`: IntegerField (primary key, database index, unique)### The operator ID
+    2. `operator_name`: CharField                                       ### The operator name
+    3. `operator_group`: CharField                                      ### The operator group
+    4. `store_id`: IntegerField                                         ### The operator's store ID
        
         and returns a response with the operator created
 
 * `/app/startChat/` which is a `POST` method. The endpoint receives the following parameters in the body of the request:
 
-    1. `chat_id`: IntegerField (primary key, database index, unique)       ### The chat ID, could also be changed to UUID to facilitate chat id generation automation
-    2. `conversation_id`: IntegerField                                     ### The conversation ID
-    3. `payload`: CharField (less than 300 characters)                     ### The message to be sent
-    4. `client_id`: IntegerField                                           ### The client's ID
-    5. `opertor_id`: IntegerField                                          ### The operator's ID
+    1. `chat_id`: IntegerField (primary key, database index, unique) ### The chat ID, could also be changed to UUID to facilitate chat id generation automation
+    2. `conversation_id`: IntegerField                               ### The conversation ID
+    3. `payload`: CharField (less than 300 characters)               ### The message to be sent
+    4. `client_id`: IntegerField                                     ### The client's ID
+    5. `opertor_id`: IntegerField                                    ### The operator's ID
        
         and returns a response with the chat created
        
