@@ -16,7 +16,7 @@ This system which acts as a Network Service for communication through a REST API
 
 This system is implemented in Python's Django. It uses Python version 3.9.4 and Django version 3.2.5. To build, just clone the repo by running the following command in Git Bash in the appropriate directory:
 
-git clone https://github.com/eyadnawar/kausa-task.git
+git clone https://github.com/eyadnawar/Cartloop_Assignment.git
 
 Open the terminal and activate the virtual environment via the command `.\venv\Scripts\activate.bat` then install the necessary packages in the [requirements.txt](https://github.com/eyadnawar/kausa-task/blob/master/requirements.txt) run `pip install -r requirements.txt`, then `cd cartloop_assignment` into cartloop_assignment directory and finally run `manage.py runserver`. It will run on the localhost.
 
